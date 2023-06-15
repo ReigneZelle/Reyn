@@ -3,30 +3,23 @@
 
     <q-header reveal elevated class="bg-primary text-white">
       <q-toolbar>
-        <div class="column">
-          <q-toolbar-title>
-            <q-avatar>
-              <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
-            </q-avatar>
-            Title 1
-          </q-toolbar-title>
-        </div>
-        <div class="column search-column">
-          <q-toolbar-title>
-            <div class="search-wrapper">
-              <i class="fa fa-search search-icon"></i>
-              <q-input outlined placeholder="Search..." class="search-input"></q-input>
+        <q-toolbar-title>
+          <div class="header">
+            <div class="column">
+              First Column
             </div>
-          </q-toolbar-title>
-        </div>
-        <div class="column">
-          <q-toolbar-title>
-            <q-avatar>
-              <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
-            </q-avatar>
-            Title 3
-          </q-toolbar-title>
-        </div>
+            <div class="column" style="flex: 2;">
+              <q-input outlined dense placeholder="Search">
+                <template v-slot:prepend>
+                  <q-icon name="search" />
+                </template>
+              </q-input>
+            </div>
+            <div class="column">
+              <img src="src/assets/cart.PNG" alt="" style="width: 50px;">
+            </div>
+          </div>
+        </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
