@@ -4,9 +4,7 @@
     <q-header reveal elevated class="bg-primary text-white">
       <q-toolbar>
         <div class="column">
-          <q-toolbar-title>
-              <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
-          </q-toolbar-title>
+          <img src="src/assets/logo.PNG" alt="" style="width: 20px;">
         </div>
         <div class="column search-column">
           <q-toolbar-title>
