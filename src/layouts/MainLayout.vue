@@ -3,23 +3,24 @@
 
     <q-header reveal elevated class="bg-primary text-white">
       <q-toolbar>
-        <q-toolbar-title>
-          <div class="header">
-            <div class="column">
-              First Column
+        <div class="column">
+          <q-toolbar-title>
+              <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+          </q-toolbar-title>
+        </div>
+        <div class="column search-column">
+          <q-toolbar-title>
+            <div class="search-wrapper">
+              <i class="fa fa-search search-icon"></i>
+              <q-input outlined placeholder="Search..." class="search-input"></q-input>
             </div>
-            <div class="column" style="flex: 2;">
-              <q-input outlined dense placeholder="Search">
-                <template v-slot:prepend>
-                  <q-icon name="search" />
-                </template>
-              </q-input>
-            </div>
-            <div class="column">
+          </q-toolbar-title>
+        </div>
+        <div class="column">
+          <div class="column">
               <img src="src/assets/cart.PNG" alt="" style="width: 50px;">
             </div>
-          </div>
-        </q-toolbar-title>
+        </div>
       </q-toolbar>
     </q-header>
 
