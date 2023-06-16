@@ -1,90 +1,29 @@
 <template>
-  <q-page class="container">
-    <div class="container">
-    <h2>Login</h2>
-    <form>
-      <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username">
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password">
-      </div>
-      <div class="form-group">
-        <button type="submit">Login</button>
-      </div>
-      <div class="form-group message">
-        Don't have an account? <a href="#">Sign up</a>
-      </div>
-    </form>
-  </div>
+  <q-page class="flex flex-center">
+    <q-layout view="lHh Lpr lFf">
+      <q-page-container>
+        <q-page class="flex flex-center">
+          <!-- <first-link /> -->
+          <second-link />
+          <third-link />
+        </q-page>
+      </q-page-container>
+    </q-layout>
   </q-page>
 </template>
-
-<style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      text-align: center;
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    .form-group label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    .form-group input[type="text"],
-    .form-group input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-    }
-
-    .form-group button {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      background-color: #4caf50;
-      border: none;
-      color: #fff;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-
-    .form-group button:hover {
-      background-color: #45a049;
-    }
-
-    .form-group .message {
-      margin-top: 10px;
-      text-align: center;
-      color: #888;
-    }
-  </style>
 <script>
+
 import { defineComponent } from 'vue'
+//import FirstLink from 'src/components/FirstLink.vue'
+import SecondLink from 'src/components/SecondLink.vue'
+import ThirdLink from 'src/components/ThirdLink.vue'
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components : {
+    //FirstLink,
+    SecondLink,
+    ThirdLink
+  }
 })
 </script>
